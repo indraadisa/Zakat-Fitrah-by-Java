@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="556beb8d-b81c-4c76-a8b3-c29a7991089a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="43"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT m.kd_zkt, m.nama, m.tgl, m.jenis, m.jumlah, m.total, c.jenis, c.transaksi_beras, c.masuk_beras, c.total_beras tb_info_beras FROM tb_zkt m RIGHT JOIN tb_info_beras c USING(jenis);]]>
+	</queryString>
+	<field name="kd_zkt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="transaksi_beras" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="masuk_beras" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tb_info_beras" class="java.lang.Float"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<image>
+				<reportElement x="55" y="0" width="102" height="88" uuid="ca1a9951-4842-4fb7-814a-d9e1082f4c03"/>
+				<imageExpression><![CDATA["C:\\Users\\ASUS\\Desktop\\belajar_web\\Skripsi_Zakat_New\\src\\icon\\logo_Skipsi.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="280" y="9" width="250" height="27" uuid="8aac98e6-dedc-4fa3-9437-49e062dd02c7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Britannic Bold" size="24"/>
+				</textElement>
+				<text><![CDATA[Musollah Nurul Huda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="36" width="250" height="22" uuid="29dd45ca-c251-49cc-b686-c6942132e5f5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Jl Cemara Rt 02/08 No 22 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="58" width="250" height="22" uuid="fab5102e-34b5-465e-a98a-543ff4cdbce7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Kel. Grogol Kec. Limo]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="305" y="9" width="187" height="20" uuid="2944e752-2322-41c3-8637-b44798025d94"/>
+				<textElement>
+					<font fontName="Cooper Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Data Zakat Fitrah Beras]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="37" y="0" width="100" height="20" uuid="ee1a5b8b-2a13-4d52-9d8d-f9546120f05c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="137" y="0" width="100" height="20" uuid="710128cd-5698-4cb2-b449-29bd4e8aef00"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="0" width="177" height="20" uuid="a8558564-8272-4a80-bf5e-59774e6b41a9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="414" y="0" width="127" height="20" uuid="3fe8c27f-7ccc-4611-92c6-764910555cec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="541" y="0" width="100" height="20" uuid="0bc657f1-0b51-4a9f-bdeb-b0daf86f7103"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="641" y="0" width="135" height="20" uuid="5bbf20eb-1b36-47b5-81f2-8f2fbe4fb589"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="37" y="4" width="90" height="16" uuid="68ae1f82-d98f-4170-b88c-391031a334dd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Dialog"/>
+				</textElement>
+				<text><![CDATA[Kode Zakat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="4" width="90" height="16" uuid="1680e78f-44e3-4ca3-93c9-b8b39c70f7b6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Dialog"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="3" width="90" height="16" uuid="ef13bd74-dc81-4043-aeec-02ca7ab5f171"/>
+				<textElement textAlignment="Center">
+					<font fontName="Dialog"/>
+				</textElement>
+				<text><![CDATA[Nama Muzaki]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="4" width="90" height="16" uuid="d0e63951-bfcc-4eaf-97cc-8ce8a27d8b3d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Dialog"/>
+				</textElement>
+				<text><![CDATA[Jenis Zakat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="544" y="3" width="90" height="16" uuid="df81f8c8-0d0a-4306-a0f6-2e56f48752fa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Dialog"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="646" y="4" width="125" height="16" uuid="2ea99725-ef28-4ee5-9b1a-b2db05623f1a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Dialog"/>
+				</textElement>
+				<text><![CDATA[Total Pembayaran Zakat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="37" y="-1" width="100" height="20" uuid="339322a7-9cfd-425a-9182-ee61e1733d9a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="137" y="-1" width="100" height="20" uuid="cc5c4908-fc14-46fe-b700-658935cef43a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="-1" width="177" height="20" uuid="0bc7e331-821f-4fb0-a351-966a49544660"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="414" y="-1" width="127" height="20" uuid="d69deea5-31f0-4758-b151-676a7bfec0d5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="541" y="-1" width="100" height="20" uuid="7aea9436-a18a-46bb-9278-7e42a6456199"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="641" y="-1" width="136" height="20" uuid="7f7efe9a-2fd3-4e28-a0e3-95087b1a41f4"/>
+			</rectangle>
+			<textField>
+				<reportElement x="41" y="0" width="100" height="20" uuid="b32a6670-985c-40a3-a34b-2abbded22e31"/>
+				<textFieldExpression><![CDATA[$F{kd_zkt}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="140" y="2" width="100" height="16" uuid="a99e0b24-8b2c-466c-bed3-b7b2c4871e2c"/>
+				<textFieldExpression><![CDATA[$F{tgl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="3" width="162" height="16" uuid="a7c5be44-e277-44c8-b90f-2761dacd560f"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="544" y="4" width="70" height="16" uuid="01f9e7ff-2d12-4ede-94a7-a077754c8ace"/>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="3" width="101" height="16" uuid="0fa49d46-0200-4618-85bc-3e8a1e0e6c71"/>
+				<textFieldExpression><![CDATA[$F{jenis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="646" y="3" width="125" height="16" uuid="5cc1348f-3eda-488e-b11b-81b72d7ee0d5"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="37" y="0" width="170" height="16" uuid="af541ef5-93bd-4f67-a391-76992a8e452b"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<text><![CDATA[Total Transaksi Beras		:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="16" width="170" height="16" uuid="3c06fc94-2da5-4401-b6e4-c8d44b61fb8d"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<text><![CDATA[Total Muzaki Zakat Beras	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="32" width="170" height="16" uuid="409d7936-eb49-43c0-b1da-d3d3a93817ef"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<text><![CDATA[Total Beras			:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="207" y="0" width="90" height="16" uuid="ea549443-76f7-46ec-8913-afc70cd6da55"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transaksi_beras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="16" width="90" height="16" uuid="dd7bbc36-ff85-4d8d-8c73-53afded0c290"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{masuk_beras}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="32" width="90" height="16" uuid="9aa539a4-a348-4eaf-b850-f51d5b90e93d"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_info_beras}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="298" y="32" width="90" height="16" uuid="778ca94c-d8ef-4d82-9d83-879584da4da9"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<text><![CDATA[Liter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="16" width="90" height="16" uuid="3056becb-fc01-4371-82c0-4968a5a40c00"/>
+				<textElement>
+					<font fontName="Meiryo UI"/>
+				</textElement>
+				<text><![CDATA[Jiwa]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="630" y="15" width="80" height="20" uuid="ba911c38-63d3-4599-b0a8-1918a99e95b0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Halaman "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="710" y="15" width="40" height="20" uuid="0b1e05fc-a576-42c1-96fd-46840cc135df"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

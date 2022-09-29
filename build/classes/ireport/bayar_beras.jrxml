@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="252" pageHeight="720" columnWidth="218" leftMargin="14" rightMargin="20" topMargin="0" bottomMargin="0" uuid="ff9b63a2-d7bd-4574-bf4d-94a527bcc067">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="189"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT kd_zkt, nama, jenis,jumlah,total,satuan FROM tb_zkt ORDER BY kd_zkt DESC LIMIT 1 ;]]>
+	</queryString>
+	<field name="kd_zkt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="4" y="2" width="60" height="60" uuid="484dcb46-aff6-4235-8029-4eef4c3f31f8"/>
+				<imageExpression><![CDATA["C:\\Users\\ASUS\\Desktop\\belajar_web\\Skripsi_Zakat_New\\src\\icon\\logo_Skipsi.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="73" y="10" width="126" height="20" uuid="4221ea10-6840-4cf6-8b01-eba723d4c576"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Bukti Pembayaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="59" width="143" height="20" uuid="a9c4c22b-aa39-41d0-9391-bc279513aaed"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Musollah Nurul Huda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="88" y="30" width="126" height="20" uuid="263f63f5-1dd3-4de3-8b0d-a70f1e1407e5"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Zakat Fitrah]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="26" width="214" height="13" uuid="3b46fdba-f83a-4ef9-ae4a-45374f378fe6"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="10"/>
+				</textElement>
+				<text><![CDATA[=============================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="39" width="56" height="20" uuid="880e6285-171b-47d1-ab5f-2e16354fca91"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Jenis :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="5" width="218" height="20" uuid="4783cb4e-9f0e-4da0-9a55-4c6cf2c40084"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="10"/>
+				</textElement>
+				<text><![CDATA[Jl Cemara Rt 02/08 Kel Grogol Kec Limo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="41" width="145" height="20" uuid="630abcb7-22ec-4c58-b4c7-042789aa878b"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="271" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="37" width="59" height="20" uuid="7353ca5f-0400-4feb-906a-78f8de395ffc"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Muzaki :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="37" width="115" height="20" uuid="e61b71c3-5e0d-4815-9445-49eef99f9553"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="63" width="59" height="20" uuid="1ec223cf-c447-4c27-a6db-0b06ffc8463e"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Jumlah :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="60" width="50" height="20" uuid="62e854ed-bb22-4b6a-bf7e-16294db2b7ff"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="105" width="59" height="20" uuid="822e54ac-3962-4030-ab70-c8d5c466bcd5"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Total :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="84" width="214" height="13" uuid="8f4836ac-f2eb-4b59-ae86-12e5145863a5"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="12"/>
+				</textElement>
+				<text><![CDATA[=============================================]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="59" y="104" width="60" height="20" uuid="b48a5f18-1bcd-4cb9-9c2b-2517897dfa18"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="104" width="80" height="20" uuid="91353769-1c4d-444b-8112-b53ab8fe7d14"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{satuan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="99" y="147" width="100" height="20" uuid="28388457-b948-46e2-8069-5678b99359c6"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="132" width="214" height="13" uuid="782ce778-25f4-48a8-a134-98e63f3157c1"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="12"/>
+				</textElement>
+				<text><![CDATA[=============================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="14" width="87" height="20" uuid="10f855ad-17dc-4188-8d4d-b555d79cc310"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Kode Zakat :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="17" width="115" height="20" uuid="ad7f29c9-fa6e-41a2-bd72-fc845fc5a4db"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kd_zkt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="73" y="164" width="141" height="20" uuid="df38bdf9-e14a-4c0f-ab7d-adb79aa2ea73"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Koordinator Zakat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="61" width="40" height="20" uuid="adf5d5f3-a14d-4f72-aafd-9a5d65b84813"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Orang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="0" width="214" height="13" uuid="8ad42050-b0af-4de5-ad8b-e75d0055d0d4"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="10"/>
+				</textElement>
+				<text><![CDATA[=============================================]]></text>
+			</staticText>
+			<image>
+				<reportElement x="99" y="186" width="85" height="70" uuid="44d0072b-ab4a-4e40-a8b0-840e0602baed"/>
+				<imageExpression><![CDATA["C:\\Users\\ASUS\\Desktop\\belajar_web\\Skripsi_Zakat_New\\src\\icon\\tanda_tangan.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="128" y="250" width="70" height="20" uuid="09b95eb1-94ac-4f8a-b695-c4329af48cb9"/>
+				<textElement>
+					<font fontName="Pixel Operator Mono" size="14"/>
+				</textElement>
+				<text><![CDATA[Namin]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="169" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="75" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
